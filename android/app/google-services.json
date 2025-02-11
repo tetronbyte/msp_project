@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738879924556",
+    "project_id": "mspproject-72b8d",
+    "storage_bucket": "mspproject-72b8d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738879924556:android:fcdaa2f707efb530e087e9",
+        "android_client_info": {
+          "package_name": "com.example.msp_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuKe4GP692dUxflrtO9Zxaj5sKYiRryH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
