@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
-import 'register_page.dart';
 
-class LoginPage extends StatelessWidget {
+class RegisterPage extends StatelessWidget {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Login")),
+      appBar: AppBar(title: Text("Register")),
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
@@ -28,29 +26,13 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Dummy authentication
-                if (usernameController.text == "admin" &&
-                    passwordController.text == "admin") {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                  );
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Invalid credentials")),
-                  );
-                }
-              },
-              child: Text("Login"),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                // Dummy Registration Logic
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text("Registered successfully")),
                 );
+                Navigator.pop(context);
               },
-              child: Text("Don't have an account? Register"),
+              child: Text("Register"),
             ),
           ],
         ),

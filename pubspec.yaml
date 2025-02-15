@@ -30,10 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^3.11.0
-  firebase_auth: ^5.4.2
-  google_sign_in: ^6.2.2
-  provider: ^6.1.2  # For state management (optional)
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -55,7 +51,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -91,3 +86,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  assets:
+    - lib/assets/images/logo.png  # Splash screen logo
+    # - lib/assets/images/          # General images
+    # - lib/assets/icons/           # Icons
+    # - lib/assets/audio/           # Offline songs
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: lib/assets/fonts/Poppins-Regular.ttf
+  #       - asset: lib/assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
