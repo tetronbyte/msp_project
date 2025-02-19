@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'login_page.dart'; // Import the login screen
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -13,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     
     // Delay of 5 seconds before switching to Login Page
-    Timer(Duration(seconds: 20), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => LoginPage()),
